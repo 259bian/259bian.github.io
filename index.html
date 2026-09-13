@@ -1,121 +1,113 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh‑CN">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>边琳雅 · 个人作品集</title>
- <meta name="description" content="计算机科学与技术专业学生，项目包含YOLOv8交通检测系统、ResumeMatch简历智能匹配系统。">
- <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF‑8">
+<meta name="viewport" content="width=device‑width, initial‑scale=1.0">
+<title>BianLinya｜作品集网站</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
- <!-- 导航栏 -->
- <header class="site-header">
- <div class="container header-inner">
- <a href="#" class="logo">Bian Linya</a>
- <button class="nav-toggle" id="navToggle" aria-label="切换菜单">
- <span></span><span></span><span></span>
- </button>
- <nav class="nav" id="nav">
- <a href="#about">关于</a>
- <a href="#projects">项目</a>
- <a href="#skills">技能</a>
- <a href="#contact">联系</a>
- </nav>
- </div>
- </header>
+<header class="site‑header">
+    <div class="container">
+        <h1 class="site‑title">BianLinya 作品集网站</h1>
+        <p class="site‑desc">个人介绍｜项目经历｜联系方式</p>
+    </div>
+</header>
+<div class="container main‑wrap">
+    <!-- 左侧侧边栏 -->
+    <aside class="sidebar">
+        <div class="widget">
+            <h3>个人介绍</h3>
+            <p>河北农业大学本科大四在读，计算机科学与技术专业。</p>
+            <p>在校学习专业课：Python程序设计、Java语言程序设计、算法分析与设计、人工智能、机器学习、数据库系统原理、计算机网络、软件工程、信息安全、面向对象的系统分析与设计、B/S架构系统。</p>
+        </div>
+        <div class="widget">
+            <h3>项目记录</h3>
+            <ul class="recent‑list">
+                <li><a href="#art‑resume">ResumeMatch简历智能匹配系统</a></li>
+                <li><a href="#art‑yolo">YOLOv8交通标志与行人车辆监测系统</a></li>
+                <li><a href="#art‑official">校园公众号推文编辑项目</a></li>
+            </ul>
+        </div>
+        <div class="widget">
+            <h3>联系方式</h3>
+            <ul class="link‑list">
+                <li>电话：13323240056</li>
+                <li>邮箱：2788758530@qq.com</li>
+                <li><a href="https://github.com/259bian" target="_blank">GitHub主页</a></li>
+            </ul>
+        </div>
+    </aside>
+    <!-- 右侧主内容区：文章列表 -->
+    <main class="content">
+        <!-- 文章1 简历匹配系统：堆叠多张截图 -->
+        <article class="post‑item" id="art‑resume">
+            <h2 class="post‑title">
+                <a href="#">ResumeMatch简历智能匹配系统</a>
+            </h2>
+            <div class="post‑meta">技术栈：SpringBoot3、Vue3、MyBatis Plus、MySQL、JWT、阿里云 OSS、DeepSeek 大模型、ECharts、Git、Postman</div>
+            <!-- 堆叠截图容器 -->
+            <div class="stack-img-wrap">
+                <img class="stack-img img-3" src="bian_images/匹配结果.png" alt="匹配结果界面">
+                <img class="stack-img img-2" src="bian_images/岗位列表.png" alt="岗位列表界面">
+                <img class="stack-img img-1" src="bian_images/优化简历.png" alt="优化简历界面">
+            </div>
+            <div class="post‑excerpt">
+                <p>前后端分离Web平台，SpringBoot3.2.5 + MyBatis‑Plus + Vue3，接入DeepSeek大模型，实现AI简历优化、双层混合人岗匹配算法，集成阿里云OSS文件存储、ECharts数据可视化大屏。</p>
+                <p>实现简历多版本快照、岗位收藏、简历投递全业务流程，完整权限控制。</p>
+            </div>
+            <div class="post‑more">
+                <a href="#">继续阅读 &gt;&gt;</a>
+            </div>
+        </article>
 
- <!-- Hero 区域 -->
- <section class="hero">
- <div class="container">
- <p class="hero-sub">你好，我是</p>
- <h1>边琳雅</h1>
- <p class="hero-text">计算机科学与技术专业本科生，擅长Python深度学习、Java后端、桌面GUI开发。</p>
- <div class="hero-actions">
- <a class="btn btn-primary" href="#projects">查看项目</a>
- <a class="btn btn-outline" href="mailto:xxx@qq.com">联系我</a>
- </div>
- </div>
- </section>
+        <!-- 文章2 YOLO项目：补全外层stack‑img‑wrap容器 -->
+        <article class="post‑item" id="art‑yolo">
+            <h2 class="post‑title">
+                <a href="#">YOLOv8交通标志与行人车辆监测系统</a>
+            </h2>
+            <div class="post‑meta">Python、YOLOv8、OpenCV、数据集处理、AI深度学习</div>
+            <div class="stack-img-wrap">
+                <img class="stack-img img-3" src="bian_images/image1.png" alt="YOLO检测图像界面截图">
+                <img class="stack-img img-2" src="bian_images/image2.png" alt="YOLO检测图像界面截图">
+                <img class="stack-img img-1" src="bian_images/video1.png" alt="YOLO检测视频界面截图">
+            </div>
+            <div class="post‑excerpt">
+                <p>基于YOLOv8+PyQt5桌面应用，支持图片、视频、摄像头实时推理，识别交通标志、行人、机动车；完成数据集处理、模型调参，多线程UI防止界面卡顿。</p>
+            </div>
+            <div class="post‑more">
+                <a href="#">继续阅读 &gt;&gt;</a>
+            </div>
+        </article>
 
- <!-- 关于 -->
- <section class="section" id="about">
- <div class="container">
- <h2 class="section-title">关于我</h2>
- <p>计算机科学与技术专业，在校期间完成多个课程实训项目。熟练使用Python完成YOLO目标检测项目，掌握PyQt5桌面软件开发；同时会使用Vue3 + SpringBoot开发前后端分离Web系统。</p>
- <p>熟悉软件工程开发流程，能够独立完成需求分析、编码实现、测试部署全流程。</p>
- </div>
- </section>
+        <!-- 文章3：校园公众号推文编辑项目 -->
+        <article class="post‑item" id="art‑official">
+            <h2 class="post‑title">
+                <a href="#">校园公众号推文编辑项目</a>
+            </h2>
+            <div class="post‑meta">新媒体实践项目</div>
+            <div class="post‑thumb">
+                <img src="bian_images/wechat‑demo.png" alt="公众号推文编辑截图">
+            </div>
+            <div class="post‑excerpt">
+                <p>负责校园公众号推文撰写、图文排版、素材收集与发布工作。熟练使用公众号编辑器进行版式美化，完成多篇推文的策划与落地，锻炼文字撰写与内容排版能力。</p>
+            </div>
+            <div class="post‑more">
+                <a href="#">继续阅读 &gt;&gt;</a>
+            </div>
+        </article>
 
- <!-- 项目 -->
- <section class="section section-bg" id="projects">
- <div class="container">
- <h2 class="section-title">项目</h2>
- <div class="project-grid">
- <article class="project-card">
- <h3>YOLOv8交通标志与行人车辆检测系统</h3>
- <p>基于YOLOv8+PyQt5开发桌面端智能交通检测软件。支持图片、视频、摄像头实时检测，识别行人、机动车、交通标志，结果可视化保存。</p>
- <div class="project-tags">
- <span>Python</span>
- <span>YOLOv8</span>
- <span>PyQt5</span>
- <span>OpenCV</span>
- </div>
- <a class="project-link" href="https://github.com/259bian/yolo-traffic-detect">查看源码</a>
- </article>
- <article class="project-card">
- <h3>ResumeMatch简历智能匹配系统</h3>
- <p>前后端分离Web项目，Vue3前端 + SpringBoot后端，实现简历解析、岗位匹配、分数计算功能。</p>
- <div class="project-tags">
- <span>Java SpringBoot</span>
- <span>Vue3</span>
- <span>MySQL</span>
- </div>
- <a class="project-link" href="https://github.com/259bian/resume-match-system">查看源码</a>
- </article>
- </div>
- </div>
- </section>
-
- <!-- 技能 -->
- <section class="section" id="skills">
- <div class="container">
- <h2 class="section-title">技能</h2>
- <div class="skills-grid">
- <div class="skill-item">
- <h3>编程语言</h3>
- <p>Python / Java / HTML / CSS / JavaScript / SQL</p>
- </div>
- <div class="skill-item">
- <h3>框架库</h3>
- <p>YOLOv8、PyQt5、SpringBoot、Vue3</p>
- </div>
- <div class="skill-item">
- <h3>工具</h3>
- <p>Git、VSCode、OpenCV、MySQL</p>
- </div>
- </div>
- </div>
- </section>
-
- <!-- 联系 -->
- <section class="section section-bg" id="contact">
- <div class="container">
- <h2 class="section-title">联系我</h2>
- <p>欢迎查看我的GitHub项目，欢迎交流学习。</p>
- <div class="contact-links">
- <a href="mailto:xxx@qq.com">xxx@qq.com</a>
- <a href="https://github.com/259bian">GitHub主页</a>
- </div>
- </div>
- </section>
-
- <!-- 页脚 -->
- <footer class="site-footer">
- <div class="container">
- <p>&copy;  边琳雅 · 个人作品集</p>
- </div>
- </footer>
-
- <script src="js/main.js"></script>
+        <!-- 分页 -->
+        <div class="pagination">
+            <span class="page‑current">1</span>
+        </div>
+    </main>
+</div>
+<footer class="site‑footer">
+    <div class="container">
+        <p>&copy; BianLinya | 个人作品集网站</p>
+    </div>
+</footer>
+<script src="js/main.js"></script>
 </body>
 </html>
