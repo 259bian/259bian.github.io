@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="zh‑CN">
+<html lang="zh-CN">
 <head>
-<meta charset="UTF‑8">
-<meta name="viewport" content="width=device‑width, initial‑scale=1.0">
-<title>BianLinya｜作品集网站</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>边琳雅｜作品集网站</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="site‑header">
+<header class="site-header">
     <div class="container">
-        <h1 class="site‑title">BianLinya 作品集网站</h1>
-        <p class="site‑desc">个人介绍｜项目经历｜联系方式</p>
+        <h1 class="site-title">BianLinya 作品集网站</h1>
+        <p class="site-desc">个人介绍｜项目经历｜联系方式</p>
     </div>
 </header>
-<div class="container main‑wrap">
+<div class="container main-wrap">
     <!-- 左侧侧边栏 -->
     <aside class="sidebar">
         <div class="widget">
@@ -23,15 +23,15 @@
         </div>
         <div class="widget">
             <h3>项目记录</h3>
-            <ul class="recent‑list">
-                <li><a href="#art‑resume">ResumeMatch简历智能匹配系统</a></li>
-                <li><a href="#art‑yolo">YOLOv8交通标志与行人车辆监测系统</a></li>
-                <li><a href="#art‑official">校园公众号推文编辑项目</a></li>
+            <ul class="recent-list">
+                <li><a href="#art-resume">ResumeMatch简历智能匹配系统</a></li>
+                <li><a href="#art-yolo">YOLOv8交通标志与行人车辆监测系统</a></li>
+                <li><a href="#art-official">校园公众号推文编辑项目</a></li>
             </ul>
         </div>
         <div class="widget">
             <h3>联系方式</h3>
-            <ul class="link‑list">
+            <ul class="link-list">
                 <li>电话：13323240056</li>
                 <li>邮箱：2788758530@qq.com</li>
                 <li><a href="https://github.com/259bian" target="_blank">GitHub主页</a></li>
@@ -40,70 +40,89 @@
     </aside>
     <!-- 右侧主内容区：文章列表 -->
     <main class="content">
-        <!-- 文章1 简历匹配系统：堆叠多张截图 -->
-        <article class="post‑item" id="art‑resume">
-            <h2 class="post‑title">
+        <!-- 文章1 简历匹配系统：改为轮播 -->
+        <article class="post-item" id="art-resume">
+            <h2 class="post-title">
                 <a href="#">ResumeMatch简历智能匹配系统</a>
             </h2>
-            <div class="post‑meta">技术栈：SpringBoot3、Vue3、MyBatis Plus、MySQL、JWT、阿里云 OSS、DeepSeek 大模型、ECharts、Git、Postman</div>
-            <!-- 堆叠截图容器 -->
-            <div class="stack-img-wrap">
-                <img class="stack-img img-3" src="bian_images/匹配结果.png" alt="匹配结果界面">
-                <img class="stack-img img-2" src="bian_images/岗位列表.png" alt="岗位列表界面">
-                <img class="stack-img img-1" src="bian_images/优化简历.png" alt="优化简历界面">
+            <div class="post-meta">技术栈：SpringBoot3、Vue3、MyBatis Plus、MySQL、JWT、阿里云 OSS、DeepSeek 大模型、ECharts、Git、Postman</div>
+            <!-- 轮播容器，替换原来stack-img-wrap -->
+            <div class="carousel-wrap">
+                <div class="carousel-inner">
+                    <img src="bian_images/匹配结果.png" alt="匹配结果界面">
+                    <img src="bian_images/岗位列表.png" alt="岗位列表界面">
+                    <img src="bian_images/优化简历.png" alt="优化简历界面">
+                </div>
+                <button class="carousel-btn prev">&lt;</button>
+                <button class="carousel-btn next">&gt;</button>
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
             </div>
-            <div class="post‑excerpt">
+            <div class="post-excerpt">
                 <p>前后端分离Web平台，SpringBoot3.2.5 + MyBatis‑Plus + Vue3，接入DeepSeek大模型，实现AI简历优化、双层混合人岗匹配算法，集成阿里云OSS文件存储、ECharts数据可视化大屏。</p>
                 <p>实现简历多版本快照、岗位收藏、简历投递全业务流程，完整权限控制。</p>
             </div>
-            <div class="post‑more">
-                <a href="#">继续阅读 &gt;&gt;</a>
+            <div class="post-more">
+                <a href="https://github.com/259bian/resume-match-system">Github链接 &gt;&gt;</a>
             </div>
         </article>
 
-        <!-- 文章2 YOLO项目：补全外层stack‑img‑wrap容器 -->
-        <article class="post‑item" id="art‑yolo">
-            <h2 class="post‑title">
+        <!-- 文章2 YOLO项目：改为轮播 -->
+        <article class="post-item" id="art-yolo">
+            <h2 class="post-title">
                 <a href="#">YOLOv8交通标志与行人车辆监测系统</a>
             </h2>
-            <div class="post‑meta">Python、YOLOv8、OpenCV、数据集处理、AI深度学习</div>
-            <div class="stack-img-wrap">
-                <img class="stack-img img-3" src="bian_images/image1.png" alt="YOLO检测图像界面截图">
-                <img class="stack-img img-2" src="bian_images/image2.png" alt="YOLO检测图像界面截图">
-                <img class="stack-img img-1" src="bian_images/video1.png" alt="YOLO检测视频界面截图">
+            <div class="post-meta">Python、YOLOv8、OpenCV、数据集处理、AI深度学习</div>
+            <!-- 轮播容器 -->
+            <div class="carousel-wrap">
+                <div class="carousel-inner">
+                    <img src="bian_images/image1.png" alt="YOLO检测图像界面截图">
+                    <img src="bian_images/image2.png" alt="YOLO检测图像界面截图">
+                    <img src="bian_images/video1.png" alt="YOLO检测视频界面截图">
+                </div>
+                <button class="carousel-btn prev">&lt;</button>
+                <button class="carousel-btn next">&gt;</button>
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
             </div>
-            <div class="post‑excerpt">
+            <div class="post-excerpt">
                 <p>基于YOLOv8+PyQt5桌面应用，支持图片、视频、摄像头实时推理，识别交通标志、行人、机动车；完成数据集处理、模型调参，多线程UI防止界面卡顿。</p>
             </div>
-            <div class="post‑more">
-                <a href="#">继续阅读 &gt;&gt;</a>
+            <div class="post-more">
+                <a href="https://github.com/259bian/yolo-traffic-detect">Github链接 &gt;&gt;</a>
             </div>
         </article>
 
         <!-- 文章3：校园公众号推文编辑项目 -->
-        <article class="post‑item" id="art‑official">
-            <h2 class="post‑title">
+        <article class="post-item" id="art-official">
+            <h2 class="post-title">
                 <a href="#">校园公众号推文编辑项目</a>
             </h2>
-            <div class="post‑meta">新媒体实践项目</div>
-            <div class="post‑thumb">
-                <img src="bian_images/wechat‑demo.png" alt="公众号推文编辑截图">
+            <div class="post-meta">新媒体实践项目</div>
+            <div class="post-thumb">
+                <img src="bian_images/wechat-demo.png" alt="公众号推文编辑截图">
             </div>
-            <div class="post‑excerpt">
+            <div class="post-excerpt">
                 <p>负责校园公众号推文撰写、图文排版、素材收集与发布工作。熟练使用公众号编辑器进行版式美化，完成多篇推文的策划与落地，锻炼文字撰写与内容排版能力。</p>
             </div>
-            <div class="post‑more">
-                <a href="#">继续阅读 &gt;&gt;</a>
+            <div class="post-more">
+                <a href="#">微信公众号链接 &gt;&gt;</a>
             </div>
         </article>
 
         <!-- 分页 -->
         <div class="pagination">
-            <span class="page‑current">1</span>
+            <span class="page-current">1</span>
         </div>
     </main>
 </div>
-<footer class="site‑footer">
+<footer class="site-footer">
     <div class="container">
         <p>&copy; BianLinya | 个人作品集网站</p>
     </div>
