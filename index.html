@@ -3,140 +3,59 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>边琳雅｜作品集网站</title>
+<meta name="description" content="边琳雅个人作品集｜后端开发｜软件测试｜科技支撑｜计算机科学与技术">
+<title>边琳雅｜Backend · Testing · Technical Support</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="site-header">
-    <div class="container">
-        <h1 class="site-title">边琳雅 作品集网站</h1>
-        <p class="site-desc">个人介绍｜项目经历｜联系方式</p>
-    </div>
-</header>
-<div class="container main-wrap">
-    <!-- 左侧侧边栏 -->
-    <aside class="sidebar">
-        <div class="widget">
-            <h3>个人介绍</h3>
-            <p>河北农业大学本科大四在读，计算机科学与技术专业。</p>
-            <p>在校学习专业课：Python程序设计、Java语言程序设计、算法分析与设计、人工智能、机器学习、数据库系统原理、计算机网络、软件工程、信息安全、面向对象的系统分析与设计、B/S架构系统。</p>
-            <p>本人计算机科学与技术本科，具备业务建模、数据库设计、接口联调经验；有大模型业务落地、计算机视觉数据集处理与模型评测实践。擅长需求梳理、测试验证与项目文档输出，做事严谨细致。意向信息科技支撑、软件测试、AI应用评测类岗位。</p>
-        </div>
-        <div class="widget">
-            <h3>项目经历</h3>
-            <ul class="recent-list">
-                <li><a href="#art-resume">ResumeMatch简历智能匹配系统</a></li>
-                <li><a href="#art-yolo">YOLOv8交通标志与行人车辆监测系统</a></li>
-                <li><a href="#art-official">校园公众号推文编辑项目</a></li>
-            </ul>
-        </div>
-        <div class="widget">
-            <h3>联系方式</h3>
-            <ul class="link-list">
-                <li>电话：13323240056</li>
-                <li>邮箱：2788758530@qq.com</li>
-                <li><a href="https://github.com/259bian" target="_blank">GitHub主页</a></li>
-            </ul>
-        </div>
-    </aside>
-    <!-- 右侧主内容区：文章列表 -->
-    <main class="content">
-        <!-- 文章1 简历匹配系统：改为轮播 -->
-        <article class="post-item" id="art-resume">
-            <h2 class="post-title">
-                <a href="#">ResumeMatch简历智能匹配系统</a>
-            </h2>
-            <div class="post-meta">技术栈：SpringBoot3、Vue3、MyBatis Plus、MySQL、JWT、阿里云 OSS、DeepSeek 大模型、ECharts、Git、Postman</div>
-            <!-- 轮播容器，替换原来stack-img-wrap -->
-            <div class="carousel-wrap">
-                <div class="carousel-inner">
-                    <img src="bian_images/匹配结果.png" alt="匹配结果界面">
-                    <img src="bian_images/岗位列表.png" alt="岗位列表界面">
-                    <img src="bian_images/优化简历.png" alt="优化简历界面">
-                    <img src="bian_images/ER-1.png" alt="ER实体关系图">
-                </div>
-                <button class="carousel-btn prev">&lt;</button>
-                <button class="carousel-btn next">&gt;</button>
-                <div class="carousel-dots">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
-            </div>
-            <div class="post-excerpt">
-                <p>本 Web 项目面向企业招聘人岗匹配业务场景，旨在借助大模型能力简化简历筛选工作。本人主要负责业务梳理、数据表建模、大模型业务方案设计以及 AI 功能验收验证。
-结合业务规则与 DeepSeek 大模型能力，设计加权式人岗匹配逻辑，把大模型能力落地到简历投递全业务链路；参与接口需求梳理与联调，覆盖简历版本管理、岗位收藏、简历投递、批量导出等业务流程。
-项目沉淀产出 ER 实体关系图、业务流程图、接口说明文档、AI 与功能测试用例等完整交付材料，保障业务数据一致性与流程闭环。</p>
-            </div>
-            <div class="post-more">
-                <a href="https://github.com/259bian/resume-match-system">Github链接 &gt;&gt;</a>
-            </div>
-        </article>
+<header class="site-header"><div class="nav container">
+<a href="#" class="logo">BIAN<span>.</span></a>
+<nav class="nav-links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
+</div></header>
+<main>
+<section class="hero" id="about"><div class="container hero-inner"><div class="hero-content">
+<div class="eyebrow">PORTFOLIO · 2026</div>
+<h1>边琳雅</h1>
+<h2>后端开发 <span>·</span> 软件测试 <span>·</span> 科技支撑</h2>
+<p class="hero-school">河北农业大学 · 计算机科学与技术 · 本科</p>
+<p class="hero-description">具备后端接口开发、数据库设计及 AI 模型评测项目经验，熟悉 SpringBoot、MyBatis-Plus、MySQL、Python、YOLOv8 等技术。擅长需求拆解、问题排查、接口联调、测试验证与项目文档编写，做事细心严谨，具备良好的沟通协作能力。</p>
+<div class="hero-actions"><a href="#projects" class="btn btn-primary">查看项目 <span>↓</span></a><a href="https://github.com/259bian" target="_blank" rel="noopener" class="btn btn-secondary">GitHub ↗</a></div>
+</div><div class="hero-side"><div class="hero-card"><div class="hero-card-label">CAREER DIRECTION</div>
+<div class="focus-item"><span>01</span><p>后端开发</p></div><div class="focus-item"><span>02</span><p>软件测试</p></div><div class="focus-item"><span>03</span><p>科技支撑</p></div>
+</div></div></div></section>
 
-        <!-- 文章2 YOLO项目：改为轮播 -->
-        <article class="post-item" id="art-yolo">
-            <h2 class="post-title">
-                <a href="#">YOLOv8交通标志与行人车辆监测系统</a>
-            </h2>
-            <div class="post-meta">Python、YOLOv8、OpenCV、数据集处理、AI深度学习</div>
-            <!-- 轮播容器 -->
-            <div class="carousel-wrap">
-                <div class="carousel-inner">
-                    <img src="bian_images/image1.png" alt="YOLO检测图像界面截图">
-                    <img src="bian_images/image2.png" alt="YOLO检测图像界面截图">
-                    <img src="bian_images/video1.png" alt="YOLO检测视频界面截图">
-                </div>
-                <button class="carousel-btn prev">&lt;</button>
-                <button class="carousel-btn next">&gt;</button>
-                <div class="carousel-dots">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
-            </div>
-            <div class="post-excerpt">
-                <p>本项目面向道路场景目标检测，用于识别路面交通标志、行人和机动车，服务于交通感知类业务。本人重点承担数据集治理、AI 模型多维度评测分析、缺陷定位与调优支撑工作。
-完成原始道路图像样本筛选、标注校验与数据增强处理，缓解遮挡、远距离小目标带来的数据分布不均衡问题；开展多轮模型训练与对比验证，采集 mAP、召回率等指标，定位模型在复杂场景下的误检、漏检缺陷，输出模型评估报告，为调优提供依据。</p>
-            </div>
-            <div class="post-more">
-                <a href="https://github.com/259bian/yolo-traffic-detect">Github链接 &gt;&gt;</a>
-            </div>
-        </article>
+<section class="section projects-section" id="projects"><div class="container">
+<div class="section-heading"><div><span class="section-number">01</span><h2>Selected Projects</h2></div><p>后端开发 · 测试验证 · AI 技术实践 · 项目成果</p></div>
 
-        <!-- 文章3：校园公众号推文编辑项目 -->
-        <article class="post-item" id="art-official">
-            <h2 class="post-title">
-                <a href="#">校园公众号推文编辑项目</a>
-            </h2>
-            <div class="post-meta">新媒体实践项目</div>
-            <div class="post-thumb">
-                <img src="bian_images/推文1.png" alt="公众号推文编辑截图">
-                <img src="bian_images/推文2.png" alt="公众号推文编辑截图">
-                <img src="bian_images/推文3.png" alt="公众号推文编辑截图">
+<article class="project-card"><div class="project-header"><div><div class="project-index">01 / BACKEND DEVELOPMENT</div><h3>ResumeMatch</h3><p class="project-name">简历智能匹配系统</p></div><div class="project-role">项目角色<strong>后端开发</strong></div></div>
+<div class="tech-tags"><span>SpringBoot 3</span><span>MyBatis-Plus</span><span>MySQL</span><span>JWT</span><span>阿里云 OSS</span><span>DeepSeek</span><span>Git</span><span>Postman</span></div>
+<div class="project-stats"><div class="stat"><strong>11</strong><span>业务数据表</span></div><div class="stat"><strong>20<span>+</span></strong><span>REST API</span></div><div class="stat"><strong>AI</strong><span>人岗匹配</span></div><div class="stat"><strong>0.5<span>%</span></strong><span>业务数据出错率</span></div></div>
+<div class="carousel-wrap"><div class="carousel-inner"><img src="bian_images/匹配结果.png" alt="简历匹配结果"><img src="bian_images/岗位列表.png" alt="岗位列表"><img src="bian_images/优化简历.png" alt="简历优化"><img src="bian_images/ER-1.png" alt="ER实体关系图"></div><button class="carousel-btn prev" aria-label="上一张">←</button><button class="carousel-btn next" aria-label="下一张">→</button><div class="carousel-dots"><button class="dot active"></button><button class="dot"></button><button class="dot"></button><button class="dot"></button></div></div>
+<div class="project-body"><div class="project-description"><h4>项目概述</h4><p>面向企业招聘场景的 Web 业务系统，覆盖求职者与管理员两端，实现简历管理、岗位管理、智能匹配、投递及状态流转等完整业务流程。</p></div><div class="project-responsibility"><h4>主要工作</h4><ul><li>独立完成 11 张业务数据表设计，进行实体关系建模，并通过索引与事务保障数据一致性。</li><li>基于 SpringBoot 开发 20+ 个 REST 风格业务接口，覆盖简历投递、岗位收藏、状态流转、Excel 批量导出等核心功能。</li><li>封装 DeepSeek 大模型 API，设计加权人岗匹配逻辑，实现 AI 能力与业务系统对接。</li><li>参与接口联调、业务流程验证、AI 功能效果验证及项目文档整理，形成完整业务闭环。</li></ul></div></div>
+<div class="project-footer"><span>SpringBoot · MySQL · REST API · AI Integration</span><a href="https://github.com/259bian/resume-match-system" target="_blank" rel="noopener">View on GitHub ↗</a></div></article>
 
-            </div>
-            <div class="post-excerpt">
-                <p>校园新媒体短期实践项目，为期两个月，担任校公众号推文编辑。围绕校园主题活动开展内容产出，独立完成素材搜集、文案撰写、图文排版以及内容校对全流程工作。
-在工作中提炼活动核心信息，规范文字表述，把控发布时间节点，完成多篇推文落地发布。锻炼信息整合提炼、书面写作、细节校对以及按时交付的工作意识，培养文档材料处理能力。</p>
-            </div>
-            <div class="post-more">
-                <a href="https://mp.weixin.qq.com/s/bP-ouru3cL-YD-jBZseVEg" target="_blank">推文1的微信公众号链接 &gt;&gt;</a>
-                <a href="https://mp.weixin.qq.com/s/cpf040STCh_sd3Rm88eJNQ" target="_blank">推文2的微信公众号链接 &gt;&gt;</a>
-                <a href="https://mp.weixin.qq.com/s/N5mAsxJZ9OX5a8eAdaDHZw" target="_blank">推文3的微信公众号链接 &gt;&gt;</a>
-            </div>
-        </article>
+<article class="project-card"><div class="project-header"><div><div class="project-index">02 / SOFTWARE TESTING · AI EVALUATION</div><h3>Traffic Detection</h3><p class="project-name">交通标志与行人车辆检测系统</p></div><div class="project-role">项目角色<strong>数据处理与测试</strong></div></div>
+<div class="tech-tags"><span>Python</span><span>YOLOv8</span><span>OpenCV</span><span>数据集处理</span><span>模型评测</span><span>功能测试</span></div>
+<div class="project-stats"><div class="stat"><strong>0.955</strong><span>mAP@0.5</span></div><div class="stat"><strong>0.93<span>+</span></strong><span>各类目标 AP</span></div><div class="stat"><strong>12<span>+</span></strong><span>单帧车辆目标</span></div><div class="stat"><strong>120</strong><span>训练轮次</span></div></div>
+<div class="carousel-wrap"><div class="carousel-inner"><img src="bian_images/image1.png" alt="YOLO目标检测结果"><img src="bian_images/image2.png" alt="YOLO目标检测结果"><img src="bian_images/video1.png" alt="视频流检测"></div><button class="carousel-btn prev" aria-label="上一张">←</button><button class="carousel-btn next" aria-label="下一张">→</button><div class="carousel-dots"><button class="dot active"></button><button class="dot"></button><button class="dot"></button></div></div>
+<div class="project-body"><div class="project-description"><h4>项目概述</h4><p>基于 YOLOv8 的交通场景目标检测桌面应用，重点参与数据集治理、模型效果评测、功能测试、缺陷定位与项目文档归档。</p></div><div class="project-responsibility"><h4>主要工作</h4><ul><li>参与道路图像数据集筛选、样本清洗、分类、标注校验及数据增强处理。</li><li>收集整理 YOLOv8 多轮训练指标，对 mAP、召回率等数据进行对比分析。</li><li>记录并分析遮挡、小目标等复杂场景下的误检与漏检问题，为模型调优提供依据。</li><li>对图片批量检测、结果自动归档、视频流推理等功能进行测试验证，整理测试材料与项目文档。</li></ul></div></div>
+<div class="project-footer"><span>Python · YOLOv8 · OpenCV · Testing</span><a href="https://github.com/259bian/yolo-traffic-detect" target="_blank" rel="noopener">View on GitHub ↗</a></div></article>
+</div></section>
 
-        <!-- 分页 -->
-        <div class="pagination">
-            <span class="page-current">1</span>
-        </div>
-    </main>
-</div>
-<footer class="site-footer">
-    <div class="container">
-        <p>&copy; BianLinya | 个人作品集网站</p>
-    </div>
-</footer>
-<script src="js/main.js?v=2"></script>
+<section class="section skills-section" id="skills"><div class="container"><div class="section-heading"><div><span class="section-number">02</span><h2>Technical Skills</h2></div><p>围绕后端、测试、数据库与技术支撑形成的实践能力</p></div>
+<div class="skills-grid">
+<div class="skill-card"><span class="skill-number">01</span><h3>Backend</h3><div class="skill-list"><span>Java</span><span>SpringBoot 3</span><span>MyBatis-Plus</span><span>REST API</span><span>JWT</span></div></div>
+<div class="skill-card"><span class="skill-number">02</span><h3>Database</h3><div class="skill-list"><span>MySQL</span><span>数据库设计</span><span>SQL</span><span>事务</span><span>ER 建模</span></div></div>
+<div class="skill-card"><span class="skill-number">03</span><h3>Testing & AI</h3><div class="skill-list"><span>Postman</span><span>接口联调</span><span>测试用例</span><span>YOLOv8</span><span>模型评测</span></div></div>
+<div class="skill-card"><span class="skill-number">04</span><h3>Tools & Support</h3><div class="skill-list"><span>Git</span><span>IDEA</span><span>Python</span><span>需求拆解</span><span>项目文档</span></div></div>
+</div></div></section>
+
+<section class="section experience-section" id="experience"><div class="container"><div class="section-heading"><div><span class="section-number">03</span><h2>Other Experience</h2></div></div>
+<div class="experience-card"><div class="experience-date">CAMPUS</div><div class="experience-content"><h3>校团委公众号推文编辑</h3><p>校园新媒体短期实践</p><div class="experience-tags"><span>素材整理</span><span>文案撰写</span><span>图文排版</span><span>内容校对</span></div><p class="experience-description">围绕校园活动主题完成素材整理、文案撰写、图文排版与内容校对，把控信息准确性与发布时间节点，完成多篇推文全流程产出。</p></div><div class="experience-links"><a href="https://mp.weixin.qq.com/s/bP-ouru3cL-YD-jBZseVEg" target="_blank">推文 01 ↗</a><a href="https://mp.weixin.qq.com/s/cpf040STCh_sd3Rm88eJNQ" target="_blank">推文 02 ↗</a><a href="https://mp.weixin.qq.com/s/N5mAsxJZ9OX5a8eAdaDHZw" target="_blank">推文 03 ↗</a></div></div></div></section>
+
+<section class="contact-section" id="contact"><div class="container contact-inner"><div><span class="section-number">04 / CONTACT</span><h2>Let's connect.</h2><p>如果你想了解我的项目经历或技术实践，欢迎通过以下方式联系我。</p></div><div class="contact-list"><a href="mailto:2788758530@qq.com"><span>Email</span>2788758530@qq.com</a><a href="https://github.com/259bian" target="_blank"><span>GitHub</span>github.com/259bian ↗</a><div><span>Phone</span>133 2324 0056</div></div></div></section>
+</main>
+<footer class="site-footer"><div class="container"><span>© 2026 BianLinya</span><span>Backend · Testing · Technical Support</span></div></footer>
+<script src="js/main.js"></script>
 </body>
 </html>
