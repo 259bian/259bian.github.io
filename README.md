@@ -42,7 +42,7 @@
 [查看 ResumeMatch 项目](https://github.com/259bian/resume-match-system)
 
 ### 02 · Traffic Detection — 交通标志与行人车辆检测系统
-**项目角色：数据处理与测试**
+**项目角色：数据处理与功能验证**
 
 - 道路图像数据集筛选、清洗、分类与标注校验
 - 数据增强及小目标、遮挡场景数据处理
